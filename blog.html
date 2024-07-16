@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Blog - My Web Templates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Our Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" onclick="openContactForm()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog fade-in">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>How to Choose the Right Web Template</h3>
+                <p>Choosing the perfect web template is crucial for your website's success. Here are some tips to help you make the right decision.</p>
+                <a href="blog-post.html">Read More</a>
+            </article>
+            <article>
+                <h3>Top 5 Web Design Trends of 2024</h3>
+                <p>Stay ahead of the curve with these top web design trends that will dominate the industry in 2024.</p>
+                <a href="blog-post.html">Read More</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Web Templates</p>
+    </footer>
+    <div id="contactForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactForm()">&times;</span>
+            <form action="/submit-contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
